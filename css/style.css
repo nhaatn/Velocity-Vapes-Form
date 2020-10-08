@@ -1,0 +1,177 @@
+/* Page resets */
+* {
+  margin: 0;
+  box-sizing: border-box;
+
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* Get rid of fieldset border */
+fieldset {
+  border: 0;
+}
+
+/* Get rid of the dots under the asterisk */
+abbr {
+  text-decoration: none;
+
+  color: red;
+}
+
+/* Give the placeholder text a color */
+input::placeholder { 
+  color: rgb(0, 121, 111);
+}
+
+/* Main container styling (Center the form and background img) */
+.main-container {
+  background-image: url("../images/smoke.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  min-height: 100vh;
+  min-width: 100vw;
+}
+
+/* Form container styling */
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  min-height: 80vh;
+  min-width: 50vw;
+
+  border: 5px solid white;
+  border-radius: 15px;
+
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Company name styling (velocity vapes) */
+.form-container h1 {
+  padding-bottom: 2rem;
+  
+  font-family: 'Roboto', sans-serif;
+  font-size: clamp(2.5rem, 4vw, 4rem);
+  line-height: 8rem;
+  letter-spacing: 3px;
+
+  background: -webkit-linear-gradient(#00203FFF, rgb(141, 255, 204));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Form styling */
+form {
+  width: 60%;
+
+  text-align: center;
+}
+
+/* Legend styling (Sign-up newletter part) */
+legend {
+  font-size: clamp(2rem, 4vw, 2.5rem);
+  /* font-size: 2rem; */
+  font-weight: bold;
+  color: #FFF;
+
+  margin: 1rem auto;
+}
+
+/* All p tags are colored the same unless otherwise */
+.form-container p {
+  font-style: italic;
+  color: white;
+}
+
+/* personal-info styling */
+.personal-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Making the p tag a flexbox a column and some styling*/
+.personal-info p {
+  display: flex;
+  flex-direction: column;
+
+  font-size: 1.3rem;
+  color: #999;
+}
+
+/* Personal labels are  styled to default flex (flex-start) */
+.personal-info p label {
+  display: flex;
+
+  width: 10ch;
+}
+
+/* Making the input boxes bigger */
+.personal-info p input {
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+
+  border-radius: 7px;
+  width: 30ch;
+}
+
+/* Give the fieldset of the select-menu some padding */
+fieldset {
+  padding: 1rem 0;
+}
+
+/* Select-label styling */
+.form-container .select-label {
+  font-size: 1.3rem;
+  color: #999;
+}
+
+/* Dropdown menu styling */
+.options {
+  width: 6rem;
+  padding-bottom: .5rem;
+  border-radius: 7px;
+
+  font-weight: bold;
+}
+
+/* Give the promotion label a color */
+.form-container .promo {
+  color: rgb(0, 153, 140);
+}
+
+/* Button Styling */
+footer button {
+  padding: .5rem 1.5rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+
+  font-size: 1rem;
+  font-weight: 600;
+
+  border-radius: 7px;
+}
+
+/* Button HOVER state */
+footer button:hover {
+  font-weight: 600;
+  
+  color: white;
+  background-color: #2C7873;
+}
+
+/* Button ACTIVE state */
+footer button:active {
+  font-weight: 600;
+
+  color: #2C7873;
+  background-color: white;
+}
